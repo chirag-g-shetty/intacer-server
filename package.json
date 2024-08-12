@@ -1,0 +1,15 @@
+{
+  "name": "intacer-server",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "host": "wrangler deploy --minify src/index.ts --name=intacer"
+  },
+  "dependencies": {
+    "groq-sdk": "^0.4.0",
+    "hono": "^4.4.13"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "wrangler": "^3.57.2"
+  }
+}
